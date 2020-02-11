@@ -1,0 +1,37 @@
+ls ai[1-5].c, ls[a-c]ii1.c
+son dos comandos que enlistan todos los archivos cuyo nombre contenga los
+parametros dados compuestos por numeros o letras dentro de un rango establecido
+por los corchetes. por ejemplo ai, .c, ii1.c, son estables, mientras que los
+numeros del 1 al 5 y las letras de la a a la c si varian.
+
+[root@host aula2]# ls ai[1-5].c
+ai1.c  ai2.c  ai3.c  ai4.c  ai5.c
+[root@host aula2]# ls [a-c]ii1.c
+aii1.c  bii1.c  cii1.c
+
+
+echo ai[1-5].c, ls [a-c]ii1.c
+
+con echo y cierto condicional del nombre, se imprimen todos los archivos cuyo
+nombre contiene los requisitos ai [cualquier numero del 1 al 5] y .c. Mientras
+que con ls se vuelve a obtener una lista de archivos cuyo nombre comience con
+las tres primeras letras del abecedario y terminen en ii1.c 
+
+[root@host aula2]# echo ai[1-5].c
+ai1.c ai2.c ai3.c ai4.c ai5.c
+[root@host aula2]# ls [a-c]ii1.c
+aii1.c  bii1.c  cii1.c
+
+
+echo a*, ls a*.c, ls a??.c, ls a????.c,ls ?iii?.c, ls *9.c
+
+echo a* imprime todos los archivos que comienzan en a, sin importan su largo ni extension.
+ai10.a aii3.a 
+ls a*.c imprime todo archivo que empieza en a y tiene expansion .c.
+ls a??.c imprime todo archivo que empieza con a, tiene dos caracteres antes de la expansion .c.
+ai1.c  ai2.c
+ls a????.c imprime todo archivo que comience con a, tenga cuatro caracteres antes de la
+expansion .c, como  aiii5.c  aiii6.c
+ls ?iii?.c imprime todo archivo cuya primer caracter sea cualquiera, tenga iii en medio y 
+expansion .c, como  wiii1.c  yiii5.c
+ls *9.c imprime todo archivo que termine con 9.c.

@@ -1,0 +1,31 @@
+lsb_release -a =informa sobre la distribución que se usa.
+uname -a =tipo de kernel de trabajo
+-a significa todo
+/bin/ conjunto de archivos ejecutables que incializan linux
+/dev/ conjunto de archivos ejecutables que administran controladores de hardware
+/etc/ archivos de intalacion y configuración del sistema
+/home/ donde se almacenan todos los archivos y usuarios.
+/lib/ conjunto de bibliotecas con programas y funciones en codigo ejecutable.
+/usr/ se guardan otros arhivos ejecutables de programas.
+/sbin/ ejecutables comandos para administrar el sistema.
+/temp/ archivos temporales que se eliminan al reiniciar el comptutadr
+/var/ son archivos variables que se modifican con el tiempo (paginas web)
+pwd da la direccion de la raiz hasta donde se encuentra o ~/
+.. directoirio padre o anterior 
+~ refiere al diretorio home 
+~usuario para eingreasr a cierta direccion 
+~ direccion raiz
+touch sirve para rear un archivo 
+rm archivo
+mkdir rmdir directorios
+cp permite copiar archivos
+ls permite ver que hay dentro
+cp curso1.txt ../. copia al directorio anterior
+mv nombrenterior nombrenuevo ===cabia nombre
+ls -l da informaicon msd ertallada lista todos los archivos
+ls - a muestra arhivos ocultos y ls -al da tamaño muestra archivos ocultos  
+total ocmmander hace backups apra windows   
+alias lista losc omandos definidos por el usuario.
+tab tab completa comnados
+ls wc cuenta cuzntas lineas 	
+

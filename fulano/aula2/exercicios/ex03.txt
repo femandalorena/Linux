@@ -1,0 +1,8 @@
+cp=      -i    
+Pregunta  si  sobreescribir  ficheros regulares destino existentes. 
+
+mkdir=   -Z     
+Establece  el  contexto de seguridad de SELinux de cada directorio creado al tipo predeterminado.
+
+rm0      -f     
+No hace caso de los ficheros que no existan y nunca pregunta al usuario.
