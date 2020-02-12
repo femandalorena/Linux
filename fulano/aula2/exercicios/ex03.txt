@@ -1,3 +1,5 @@
+FLAGS PARA COMANDOS IMPORTANTES: 
+
 cp=      -i    
 Pregunta  si  sobreescribir  ficheros regulares destino existentes. 
 

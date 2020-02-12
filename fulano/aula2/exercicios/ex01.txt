@@ -1,3 +1,5 @@
+PRIMER EJERCICIO DE COMANDOS Y FLAGS:
+
 ls ai[1-5].c, ls[a-c]ii1.c
 son dos comandos que enlistan todos los archivos cuyo nombre contenga los
 parametros dados compuestos por numeros o letras dentro de un rango establecido

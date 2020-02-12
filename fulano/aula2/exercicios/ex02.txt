@@ -1,3 +1,5 @@
+FLAGS IMPORTANTES PARA LS:
+
  -r  Invierte el orden de la clasificación.
  -h  Añade una letra  indicativa  de  tamaño,  tal  como  M  para  megabytes.
  -C  Lista los ficheros en columnas, ordenados verticalmente.
