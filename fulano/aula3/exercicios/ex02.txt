@@ -4,7 +4,18 @@ ls > arquivo.txt
 
 redireccionar el archivo.txt con sort
 
-sort < arquivo.txt
+archivo.txt > sort >> ex02.txt
 
 hacer de su salida un comando de resultado
+
+
+h
+o
+l
+a
+
+j
+i
+j
+i
 

@@ -1,0 +1,2 @@
+alias edit='gedit ~/home/curso/fulano/aula3/exercicios/ex01
+.txt' 
