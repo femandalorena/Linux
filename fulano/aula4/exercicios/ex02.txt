@@ -1,0 +1,28 @@
+crear forever.sh
+	creado en directorio aula4
+
+correr el script.
+	./forever.sh
+	ans= Iniciando el proceso infinito
+
+ponerlo en segundo plano
+	^Z
+	ans= [1]+  Stopped                 ./forever.sh
+
+buscarlo con ps
+	ps
+	ans= PID TTY          TIME CMD
+	   21307 pts/1    00:00:00 forever.sh
+
+matar el proceso
+	kill -9 21307
+	ans= [1]+  Killed                  ./forever.sh
+
+intentar con nohup y & para ver el si al cerrar la terminal 
+el proceso sigue viviendo.
+	nohup forever.sh &
+	ans= [1] 21335
+	nohup: fernanda@ubuntu:~/curso/fulano/aula4$ 
+	ignoring input and appending output to 'nohup.out'
+	ans= el proceso de forever sigue vivo.
+	

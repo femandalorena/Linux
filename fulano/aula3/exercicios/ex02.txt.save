@@ -1,0 +1,21 @@
+Redireccion de la salida de comandos ls
+
+ls > arquivo.txt
+
+redireccionar el archivo.txt con sort
+
+arquivo > sort >> ex02.txt
+
+hacer de su salida un comando de resultado
+
+
+h
+o
+l
+a
+
+j
+i
+j
+i
+

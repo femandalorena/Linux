@@ -1,0 +1,49 @@
+Los procesos del usuario fernanda son:
+	ps -fu fernanda | wc -l
+	ans= 71
+
+Los procesos de todos los usuarios son:
+        ps -e | wc -l
+        ans= 308
+
+Abriendo firefox, su PID es:
+        firefox &
+        ans= 19906
+
+matando firefox con el comando kill:
+        kill 19906
+        ans=  Receive IPC close with reason=AbnormalShutdown
+              Exiting due to channel error.
+
+abriendo gedit, se coloca en background con ctrl+z bg:
+        gedit 
+        ^Z
+        ans= [1]+  Stopped                 gedit
+
+trayendo de nuevo a gedit para primer plano:
+        fg
+	ans= gedit
+
+top para mostrar los procesos con mas recursos:
+	Los 3 procesos que mas ocupan memoria son de fernanda:
+1312 fernanda   20   0  385288   34068    11208 S  13.1   1.7   2:13.35 Xorg       
+1440 fernanda   20   0  2989876  139152   37316 S  6.9    6.9   6:13.42 gnome-she+ 
+18605 fernanda  20   0  808304   40168    28848 S  6.6    2.0   0:42.09 gnome-ter+  
+
+man top para leer toda la lista.
+En las columnas del listado, aparecen el PID (identificador del proceso), el USER 
+o creador, el PR (prioridad de desarrollo), el NI o valor nice, VIRT que indica la
+porcion de la memoria virtual usada, RES refiere a la porcion de ram usada, SHR a 
+la memoria compartida y la S al estado de desarrollo. Mientras que %CPU y &MEM 
+refieren al porcentaje que el proceso usa de los componentes fisicos. TIME+ es el 
+tiempo del cpu procesando desde el inicio hasta el desarrollo y COMMAND es el comando
+que comenzo el desarrollo.  
+
+matar un proceso con top k.
+	firefox &: proceso id: 20608 
+	top
+	k
+	20608
+	ans= [1]+  Terminated              firefox
+
+	
