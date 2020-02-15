@@ -1,0 +1,45 @@
+NOMBRE DE LA MAQUINA
+        hostname
+        ans= ubuntu
+
+FECHA DEL SISTEMA
+        date
+        ans= Fri Feb 14 03:38:35 PST 2020
+
+DONDE ESTA EL COMANDO CP
+        which cp
+        ans= /bin/cp
+
+10 EJEMPLOS DE COMANDO FIND EN HOME
+        ans= /home/fernanda/.cache/mozilla/firefox
+        /home/fernanda/.cache/ibus/bus
+        ./aula3/exercicios/arquivo.txt
+        ./aula4/forever.sh
+        /home/fernanda/rtlwifi_new/rc.c
+        /home/fernanda/.cache/gnome-software/fwupd
+        ./aula2/exemplos/ri4.c
+	/home/fernanda/.viminfo
+	/home/fernanda/.ICEauthority
+        /usr/src/linux-headers-5.3.0-28-generic/lib
+
+EN /home/curso LOCALICE LOS ARCHIVOS .txt CON FIND
+	find -name '*.txt'
+	ans= ./backup/fulano/aula1/bio.txt
+	./backup/fulano/aula1/notas.txt
+	./fulano/aula3/exercicios/ex01.txt
+	./fulano/aula3/exercicios/arquivo.txt
+	./fulano/aula3/exercicios/ex02.txt
+	./fulano/aula3/pipeinandout.txt
+	./fulano/aula3/tres_primeros.txt
+	./fulano/aula1/bio.txt
+	./fulano/aula1/notas.txt
+	./fulano/aula2/exercicios/ex03.txt
+	./fulano/aula2/exercicios/ex01.txt
+	./fulano/aula2/exercicios/ex02.txt
+	./fulano/aula4/salida.txt
+	./fulano/aula4/exercicios/ex01.txt
+	./fulano/aula4/exercicios/ex02.txt
+
+USAR FIND CON EXEC PARA ELIMINAR ARCHIVOS .so EN /home/curso/fulano
+	find . -type f -name "*.so" -exec rm {} \;
+	ans= al usar find -name '*.so', ya no se lista ningun archivo .so

@@ -1,0 +1,66 @@
+CUANTAS PALABRAS, CARACTERES Y LINEAS TIENE EL ARCHIVO nombres.txt
+	wc nombres.txt
+	ans= 10 lineas, 10 palabras y 78 caracteres en nombres.txt
+
+USE grep PARA LISTAR LOS NOMBRES QUE COMIENZAN CON A
+	grep "^a" nombres.txt
+	ans= -
+	grep "a" nombres.txt
+	ans= juan
+	fernando
+	yasuri
+	fernanda
+	charlotte
+	diana
+	fernanda
+	lorena
+	fernando
+
+USE grep PARA LISTAR LOS NOMBRES QUE NO COMIENZAN CON A EN nomes_nao_a.txt
+	grep -v "^a" nombres.txt
+	ans= juan
+	fernando
+	yasuri
+	fernanda
+	charlotte
+	diana
+	fernanda
+	lorena
+	fernando
+	miguel
+	
+USE EL COMANDO diff PARA COMPARAR nombres.txt CON nomes_nao_a.tct
+	diff nombres.txt nomes_nao_a.txt 
+	ans= no hay diferencia entre ambas listas.
+
+EL ARCHIVO /share/pesquisa.txt CONTIENE RESULTADOS DE UNA ELECCION CON 
+VARIOS CANDIDATOS, MEZCLAR sort, uniq Y wc PARA SABER CUANTOS CANDIDATOS
+DIFERENTES FUERON VOTADOS.
+	sort < pesquisa.txt | uniq
+	sort < pesquisa.txt | uniq | wc -l
+	ans= Awilda Lazaro
+	Bennett Lanza
+	Gavin Kelleher
+	Homer Whatley
+	Johna Stoddart
+	Jolene Graydon
+	Leonel Zambrano
+	Lucie Delaughter
+	Shalonda Blakey
+	Sherrie Melrose
+	10
+
+HAGA UNA LINEA DE COMANDO PARA IMPRIMIR EL NOMBRE DEL CANDIDATO Y EL NUMERO
+DE VOTOS EN ORDEN DECRECIENTE.
+	cat pesquisa.txt | sort | uniq -c | sort -n -r
+	ans=     26 Lucie Delaughter
+  		18 Bennett Lanza
+ 		14 Sherrie Melrose
+		14 Shalonda Blakey
+   		14 Jolene Graydon
+		14 Johna Stoddart
+		14 Gavin Kelleher
+     		12 Homer Whatley
+    		12 Awilda Lazaro
+      		4 Leonel Zambrano
+	
