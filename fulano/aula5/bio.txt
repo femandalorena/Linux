@@ -1,0 +1,2 @@
+este es un archivo bio.txt de extensión de texto
+con casi 13 palabras.
